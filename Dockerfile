@@ -12,7 +12,7 @@ RUN python "/tmp/get-pip.py"
 RUN pip install --upgrade pip
 RUN pip install shadowsocks
 
-ENV SS_PASSWORD 1234567
+ENV SS_PASSWORD 801201
 ENV SS_METHOD aes-256-cfb
 
 ENTRYPOINT /usr/bin/ssserver -k ${SS_PASSWORD} -m ${SS_METHOD}
